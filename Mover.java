@@ -53,14 +53,6 @@ public class Mover extends Actor
     }  
     
     /**
-     * Set the image for this actor to the specified image.
-     */
-    public void setImage(String image)
-    {
-        setImage(image);
-    }
-    
-    /**
      * Check wether a given key is pressed
      */
     public boolean isKeyDown(String key)
