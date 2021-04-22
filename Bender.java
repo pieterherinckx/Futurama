@@ -14,8 +14,6 @@ public class Bender extends Mover
      */
     public void act() 
     {
-        if(isKeyDown("right")){
-        moveRight();
-    }
+
     }    
 }
