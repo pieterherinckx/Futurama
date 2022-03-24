@@ -6,7 +6,7 @@ import java.util.ArrayList;
 /**
  * Mover. This is the base class for all moving objects. In addition to the standard Actor
  * methods, it provides the ability to move and turn.
- * 
+ *
  * @author Pieter Herinckx
  * @version 1.0
  */
@@ -14,7 +14,7 @@ public class Mover extends Actor
 {
     private static int speed = 4;
     private boolean movingRight = true;
-    
+   
     /**
      * Turn 90 degrees to the right (clockwise).
      */
@@ -22,7 +22,7 @@ public class Mover extends Actor
     {
         turn(90);
     }
-    
+   
     /**
      * Turn 'angle' degrees towards the right (clockwise).
      */
@@ -30,7 +30,7 @@ public class Mover extends Actor
     {
         setRotation(getRotation() + angle);
     }
-    
+   
     /**
      * Makes the actor move automaticly from right to left and from left to right and use a specified image
      */
@@ -51,7 +51,7 @@ public class Mover extends Actor
             }
         }
     }  
-    
+   
     /**
      * Check wether a given key is pressed
      */
@@ -77,7 +77,7 @@ public class Mover extends Actor
         setLocation ( getX() - speed, getY() );
         movingRight = false;
     }
-    
+   
     /**
      * Move up at the current speed.
      */    
@@ -93,7 +93,7 @@ public class Mover extends Actor
     {
         setLocation ( getX(), getY() + speed );
     }
-    
+   
     /**
      * Test if we are at one of the edges of the world. Return true if we are.
      */
@@ -106,7 +106,7 @@ public class Mover extends Actor
         else
             return false;
     }
-    
+   
     /**
      * Return true if we touch an object of class 'clss'.
      * False if there is no such object here.
